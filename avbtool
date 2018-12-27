@@ -3080,7 +3080,7 @@ class Avb(object):
           # size as the hash size. Don't populate a random salt if this
           # descriptor is being created to use a persistent digest on device.
           hash_size = digest_size
-          salt = open('/dev/urandom').read(hash_size)
+          salt = open('urandom').read(hash_size)
         else:
           salt = ''
 
@@ -3310,7 +3310,7 @@ class Avb(object):
           # size as the hash size. Don't populate a random salt if this
           # descriptor is being created to use a persistent digest on device.
           hash_size = digest_size
-          salt = open('/dev/urandom').read(hash_size)
+          salt = open('urandom').read(hash_size)
         else:
           salt = ''
 
@@ -3926,7 +3926,7 @@ class AvbTool(object):
                             help='Hash algorithm to use (default: sha256)',
                             default='sha256')
     sub_parser.add_argument('--salt',
-                            help='Salt in hex (default: /dev/urandom)')
+                            help='Salt in hex (default: urandom)')
     sub_parser.add_argument('--calc_max_image_size',
                             help=('Don\'t store the footer - '
                                   'instead calculate the maximum image size '
@@ -3974,7 +3974,7 @@ class AvbTool(object):
                             help='Hash algorithm to use (default: sha1)',
                             default='sha1')
     sub_parser.add_argument('--salt',
-                            help='Salt in hex (default: /dev/urandom)')
+                            help='Salt in hex (default: urandom)')
     sub_parser.add_argument('--block_size',
                             help='Block size (default: 4096)',
                             type=parse_number,
