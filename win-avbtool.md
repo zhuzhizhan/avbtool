@@ -42,7 +42,7 @@
 
 从http://slproweb.com/products/Win32OpenSSL.html下载openssl的安装包Win64OpenSSL_Light-1_1_1a.exe，安装软件。设置环境变量，如下：
 
-![openssl](image\openssl.png)
+![openssl](image/openssl.png)
 
 ## avbtool修改
 
